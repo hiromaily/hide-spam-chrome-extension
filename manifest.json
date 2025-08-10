@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Hide Non-Japanese Sections",
+    "version": "1.0",
+    "description": "Hide parent div.section when h3 element doesn't contain any Japanese words",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://anond.hatelabo.jp/*"],
+        "js": ["content_script.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  
